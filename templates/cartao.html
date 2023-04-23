@@ -1,0 +1,42 @@
+
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cartao.css">
+    <title>Cartão de identificação do aluno</title>
+</head>
+<body>
+    <h1>Usuarios</h1>
+    <p>Listagem de usuarios</p>
+    <h1>Cartão de identificação do aluno</h1><br>
+
+    <div class="container">
+        <div class="container-item">
+            <div id="item1">
+                <img id="foto" src="imgs/th.jpeg" alt="foto aluno">
+            </div>
+            <div id="item2">
+                <div class="container-info">
+                    {% for usr in usuarios %}
+                    <p>Nome: {{ usr.nome }} </p>  
+                    <p>Data de Nascimento: {{ usr.datanasc }}</p>
+                    <p>turma: {{ usr.idTurma }}</p> 
+                    <p>Curso: {{ usr.idCurso }}</p>  
+                    <p>Nivel: 1 </p> 
+                    {% endfor %}
+                </div>
+            </div>
+            <div id="item3">
+                <img id="qrcode" src="imgs/qrcode.jpeg" alt="QRcode do aluno">
+            </div>
+        </div>
+        <a href="logaut.php" class="link">Sair</a>
+    </div>
+
+</body>
+</html>
+
+         

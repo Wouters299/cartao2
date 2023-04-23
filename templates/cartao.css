@@ -1,0 +1,58 @@
+body{
+    background: url(imgs/ifr.jpeg);
+    background-size: 100%;
+    font: normal 15pt arial;
+    }
+    
+    h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    }
+    .container{
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 600px;
+        margin: auto;
+        box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.712);
+    }
+    .container-item{
+    display: flex;
+    justify-content: space-evenly;
+    }
+    
+    div{
+    text-align: center;
+    padding: 8px 0;
+    }
+    
+    #foto{
+    border-radius: 30px ;
+    width: 130px;
+    
+    
+    }
+    
+    #qrcode{
+        width: 130px;
+    }
+    
+    .opcao{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    button{
+        width: 240px;
+        height: 120px;
+        background-color: rgb(8, 112, 64);
+        border: rgb(110, 179, 156);
+        border-radius: 10px;
+        font-size: larger;
+        pointer-events: fill;
+    }
+
+    .link{
+        text-decoration: none;
+       
+    }
